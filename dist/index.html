@@ -2,19 +2,116 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-  <link rel="stylesheet" href="main.css?cb=1579881795976">
+  <title>Home | SimplesMente</title>
+
+  <!-- FavIcon
+   ------------------------------------------------------>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/images/favicon/site.webmanifest" />
+
+  <!-- FontAwesome
+   ------------------------------------------------------>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+  <!-- Fonts
+   ------------------------------------------------------>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Quicksand&display=swap" rel="stylesheet" />
+
+  <!-- CSS
+   ------------------------------------------------------>
+  <link rel="stylesheet" href="main.css?cb=1579908915192" />
 </head>
 
 <body>
-  <h1>This is a test</h1>
-  <h2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod, debitis.</h2>
+  <header>
+    <nav class="nav">
+      <!-- Logo -->
+      <div class="nav__logo">
+        <div class='logo__dot logo__dot--marginRight'></div>
+        <div class='logo__dot'></div>
 
-  <script src="main.js?cb=1579881795976"></script>
+      </div>
+
+      <div class="nav__icons">
+
+        <!-- Cart Icon-->
+        <button>
+          <a href="">
+            <div class="cart__marker">
+              <div class='marker__circle'>1</div>
+            </div>
+            <i class="nav__icon nav__icon--marginRight fas fa-shopping-cart"></i>
+          </a>
+        </button>
+
+        <!-- Menu Icon -->
+        <button id='btn__menu'>
+          <i class="nav__icon fas fa-plus"></i>
+        </button>
+      </div>
+
+      <!-- Menu -->
+      <div class="nav__menu" id='nav__menu'>
+        <ul class="menu__list">
+          <a href="index.html">
+            <li class="menu__item">
+              home
+            </li>
+          </a>
+
+          <a href="produtos.html">
+            <li class="menu__item">
+              produtos
+            </li>
+          </a>
+
+          <a href="sobre.html">
+            <li class="menu__item">
+              sobre
+            </li>
+          </a>
+
+          <a href="contato.html">
+            <li class="menu__item">
+              contato
+            </li>
+          </a>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class='home'>
+
+    <!-- Background -->
+    <div class="home__bg"></div>
+
+    <!-- Title -->
+    <div class="home__title">
+      <h1>simples</h1>
+      <h1>mente</h1>
+      <h1>. .</h1>
+      <p>Simplifique seu guarda roupa. Simplifique sua mente. Simples assim.</p>
+    </div>
+
+    <!-- Explore Button -->
+    <div class="home__explore">
+      <a href="produtos.html">
+        <button>
+          Explore nossos produtos
+        </button>
+      </a>
+    </div>
+  </main>
+
+  <script src="main.js?cb=1579908915192"></script>
 </body>
 
 </html>

@@ -1,0 +1,83 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5vw;
+
+  &__logo {
+    @include flex-center;
+    padding: 0.5rem;
+  }
+
+  &__menu {
+    @include size(100%, auto);
+    @include flex-center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5rem 0 2rem 0;
+
+    background: $c-black;
+
+    transform: translateY(-100%);
+    opacity: 0;
+    @include transition(0.2s, 0s);
+  }
+}
+
+.menu {
+  &__list {
+    display: inline-block;
+    text-align: center;
+  }
+
+  &__item {
+    color: $c-white;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+}
+
+.logo__dot {
+  @include size(7px);
+  display: inline-block;
+
+  border-radius: 100%;
+  background-color: $c-black;
+
+  &--marginRight {
+    margin-right: 0.5rem;
+  }
+}
+
+.nav__icon {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+
+  &--marginRight {
+    margin-right: 1rem;
+  }
+}
+
+.cart__marker {
+  position: relative;
+}
+
+.marker__circle {
+  width: 20px;
+  height: 20px;
+
+  position: absolute;
+  top: 0;
+  right: 15px;
+
+  border-radius: 100%;
+  background-color: $c-blue;
+  font-weight: bold;
+  color: $c-white;
+}
+
+.open-menu {
+  @extend %reset-animation;
+}

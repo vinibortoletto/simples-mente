@@ -1,0 +1,51 @@
+.home {
+  margin-top: 2rem;
+
+  &__bg {
+    @include size(100%, 100px);
+
+    position: absolute;
+    bottom: 0;
+
+    background: url("/images/home-bg-sm.png");
+
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__title {
+    @include flex-center;
+    flex-direction: column;
+
+    padding: 0 5vw;
+    text-align: center;
+
+    h1 {
+      font-family: $ff-special;
+      text-transform: uppercase;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-top: 1rem;
+    }
+  }
+
+  &__explore {
+    @include flex-center;
+    margin-top: 3rem;
+
+    button {
+      border: 1px solid $c-black;
+      padding: 1rem;
+      @include transition(.2s, 0s);
+
+      &:hover {
+        background-color: $c-black;
+
+        color: $c-white;
+
+      }
+    }
+  }
+}
