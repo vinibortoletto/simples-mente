@@ -1,0 +1,63 @@
+.home__bg {
+  position: absolute;
+  z-index: -1;
+
+  background-image: url("/images/home-bg-lg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--back {
+    @include size(70vw, calc(100vh - 5rem));
+
+    right: 0;
+    bottom: 0;
+
+    outline: 10px double rgba($c-white, 0.5);
+    outline-offset: -30px;
+
+    padding: 5rem;
+  }
+
+  &--gradient {
+    position: absolute;
+    z-index: 1;
+
+    background: linear-gradient(to bottom, rgba($c-black, 0.8), transparent);
+  }
+
+  &--gradient,
+  &--front {
+    @include size(100%);
+    top: -20vh;
+    right: -60vw;
+    border-bottom-left-radius: 3rem;
+
+    display: none;
+  }
+
+  &--front {
+    box-shadow: -30px 30px 3px rgba($c-black, 0.4);
+  }
+}
+
+@include media(500px) {
+  .home__bg {
+    &--back {
+      outline-offset: -100px;
+    }
+    // &--gradient,
+    // &--front {
+    // right: -50vw;
+    // }
+  }
+}
+
+// @include media(900px) {
+//   .home__bg {
+//     &--gradient,
+//     &--front {
+//       right: -45vw;
+//     }
+//   }
+// }

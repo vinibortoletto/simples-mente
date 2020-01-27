@@ -1,5 +1,28 @@
+body,
+html {
+  height: 100%;
+}
+
 body {
   background-color: $c-white;
   color: $c-black;
   font-family: $ff-dft;
+}
+
+main {
+  opacity: 0;
+  animation: pageTransition 0.2s ease-out forwards;
+}
+
+i {
+  color: $c-black;
+}
+
+@keyframes pageTransition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

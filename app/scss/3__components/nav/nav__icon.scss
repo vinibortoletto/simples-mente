@@ -1,0 +1,22 @@
+.nav__icon {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+
+  &--marginRight {
+    margin-right: 1rem;
+  }
+}
+
+#btn__menu {
+  @include transition(0.2s, 0s);
+}
+
+.spin-menuBtn {
+  transform: rotate(225deg);
+}
+
+@include media(900px) {
+  .nav__icons {
+    display: none;
+  }
+}

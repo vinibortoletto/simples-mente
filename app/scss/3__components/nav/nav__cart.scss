@@ -1,0 +1,17 @@
+.cart__marker {
+  position: relative;
+}
+
+.marker__circle {
+  @include size(20px);
+  @include flex-center;
+
+  position: absolute;
+  top: 0;
+  right: 15px;
+
+  border-radius: 100%;
+  background-color: $c-blue;
+  font-weight: bold;
+  color: $c-black;
+}

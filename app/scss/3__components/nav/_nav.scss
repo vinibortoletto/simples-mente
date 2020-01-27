@@ -1,0 +1,15 @@
+@import "nav__logo";
+@import "nav__icon";
+@import "nav__cart";
+@import "nav__menu";
+
+.nav {
+  @include size(100%, 5rem);
+
+  @include flex-center;
+  justify-content: space-between;
+  padding: 0 5vw;
+
+  position: relative;
+  z-index: 100;
+}

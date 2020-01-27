@@ -1,0 +1,43 @@
+.home__text {
+  margin-top: 130px;
+  text-align: right;
+
+  position: absolute;
+  top: 0;
+
+  h1 {
+    text-align: right;
+    line-height: 0.5;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+
+    font-family: $ff-special;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: normal;
+  }
+
+  p {
+    margin-bottom: 3rem;
+    font-style: italic;
+  }
+}
+
+@include media(500px) {
+  .home__text {
+    left: 10vw;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
+
+@include media(800px) {
+  .home__text {
+    h1 {
+      line-height: 0.7;
+      font-size: 6rem;
+    }
+  }
+}

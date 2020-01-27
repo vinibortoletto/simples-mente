@@ -1,0 +1,32 @@
+.home__explore {
+  @include flex-center;
+
+  position: absolute;
+  bottom: 150px;
+  z-index: 1;
+
+  button {
+    padding: 2rem;
+    font-weight: bold;
+    background-color: $c-black;
+
+    a {
+      color: $c-white;
+    }
+  }
+}
+
+@include media(500px) {
+  .home__explore {
+    right: 10vw;
+    bottom: 60px;
+
+    button {
+      padding: 3rem;
+
+      &:hover {
+        background-color: #212121;
+      }
+    }
+  }
+}
