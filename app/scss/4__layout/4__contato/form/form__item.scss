@@ -1,0 +1,21 @@
+.form__item {
+  width: 100%;
+  margin-bottom: 2rem;
+
+  label {
+    font-weight: bold;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 1rem;
+
+    border-bottom: 5px solid #ffffff;
+    box-shadow: 0 4px 6px -6px $c-black;
+
+    &:focus {
+      border-bottom: 5px solid $c-blue;
+    }
+  }
+}

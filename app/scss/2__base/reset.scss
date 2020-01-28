@@ -158,3 +158,13 @@ a {
   background: none;
   cursor: pointer;
 }
+
+input,
+textarea {
+  display: block;
+  background: transparent;
+  border: none;
+  resize: none;
+  font-family: $ff-dft;
+  font-size: 1rem;
+}

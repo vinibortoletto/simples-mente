@@ -97,13 +97,13 @@
             <a href="sobre.html">
               <li class="menu__item">
                 sobre
-                <div class="page-active"></div>
               </li>
             </a>
 
             <a href="contato.html">
               <li class="menu__item menu__item--marginRight">
                 contato
+                <div class="page-active"></div>
               </li>
             </a>
           </ul>
@@ -111,56 +111,57 @@
       </nav>
     </header>
 
-    <main class="sobre">
-      <div class="sobre__bg">
-        <figure>
-          <img
-            srcset="
-              /images/sobre/sobre-bg-lg.png 1024w,
-              /images/sobre/sobre-bg-md.png  768w
-            "
-            src="/images/sobre/sobre-bg-sm.png"
-            alt="uma mulher"
+    <main class="contato">
+      <div class="contato__title">
+        <h1><span>precisa de ajuda?</span> manda um oi pra gente!</h1>
+        <!-- <h2>manda um oi pra gente!</h2> -->
+      </div>
+
+      <form class="form">
+        <div class="form__item">
+          <label for="nome">nome:</label>
+          <input id="nome" type="text" placeholder="seu nome completo" />
+
+          <div class="erro erro--nome">&nbsp</div>
+        </div>
+
+        <div class="form__item">
+          <label for="email">email:</label>
+          <input id="email" type="text" placeholder="seu@email.com" />
+
+          <div class="erro erro--email">&nbsp</div>
+        </div>
+
+        <div class="form__item">
+          <label for="assunto">assunto:</label>
+          <input
+            id="assunto"
+            type="text"
+            placeholder="produtos, venda, troca, etc"
           />
-        </figure>
 
-        <div></div>
-      </div>
-
-      <section class="sobre__text">
-        <div class="sobre__title">
-          <h1>sobre</h1>
-          <h1>mim</h1>
+          <div class="erro erro--assunto">&nbsp</div>
         </div>
 
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            velit tortor, venenatis sed magna sed, varius sollicitudin risus.
-            Vestibulum accumsan nisi non imperdiet lobortis. Morbi scelerisque
-            ipsum sed leo elementum, nec suscipit augue placerat. Etiam
-            scelerisque nisl eu aliquam porttitor. Nunc augue lorem, iaculis non
-            diam id, fermentum porta leo. Etiam euismod laoreet lacus in cursus.
-            Phasellus erat nunc, scelerisque nec est ut, vulputate varius felis.
-            Vivamus in vulputate libero. Vestibulum euismod tincidunt volutpat.
-            In eu lacus pharetra neque semper cursus. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-          <p>
-            Donec vitae egestas nunc, semper aliquet ex. Proin euismod iaculis
-            odio eget ultrices. Duis a leo vitae turpis vehicula semper et vitae
-            nunc. Morbi scelerisque leo risus, id vehicula nisi finibus ac.
-            Aenean fringilla nulla eget.
-          </p>
-        </div>
-      </section>
+        <div class="form__item">
+          <label for="mensagem">mensagem:</label>
+          <textarea
+            rows="1"
+            id="mensagem"
+            type="text"
+            placeholder="olá, gostaria de..."
+          ></textarea>
 
-      <div class="sobre__logo">
-        <div>
-          <h1>simples</h1>
-          <h1>mente</h1>
+          <div class="erro erro--mensagem">
+            &nbsp
+          </div>
         </div>
-      </div>
+
+        <div class="form__btnBox">
+          <button class="form__btn form__btn--cancelar">cancelar</button>
+          <button class="form__btn form__btn--enviar">enviar</button>
+        </div>
+      </form>
     </main>
 
     <footer>

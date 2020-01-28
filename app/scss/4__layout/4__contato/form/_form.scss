@@ -1,0 +1,16 @@
+@import "form__item";
+@import "form__erro";
+@import "form__btn";
+
+.form {
+  @include flex-center;
+  flex-direction: column;
+  width: 80vw;
+  margin: auto;
+}
+
+@include media(1000px) {
+  .form {
+    width: 60vw;
+  }
+}

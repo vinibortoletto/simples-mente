@@ -1,0 +1,27 @@
+.form__btn {
+  width: 8rem;
+  font-weight: bold;
+  padding: 1rem;
+
+  &--cancelar {
+    border: 1px solid $c-black;
+    color: $c-black;
+    margin-right: 0.5rem;
+  }
+
+  &--enviar {
+    background-color: $c-black;
+    color: $c-white;
+
+    &:hover {
+      background-color: #212121;
+    }
+  }
+}
+
+@include media(600px) {
+  .form__btnBox {
+    width: 100%;
+    text-align: right;
+  }
+}
