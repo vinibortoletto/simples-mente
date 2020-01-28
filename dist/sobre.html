@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Home | SimplesMente</title>
+    <title>Sobre | SimplesMente</title>
 
     <!-- FavIcon
    ------------------------------------------------------>
@@ -53,6 +53,13 @@
   <body>
     <header>
       <nav class="nav">
+        <a href="index.html">
+          <div class="nav__logo">
+            <span>simples</span>
+            <span>mente</span>
+          </div>
+        </a>
+
         <div class="nav__icons">
           <!-- Cart Icon-->
           <button>
@@ -78,12 +85,11 @@
             <a href="index.html">
               <li class="menu__item">
                 home
-                <div class='page-active'></div>
               </li>
             </a>
 
             <a href="produtos.html">
-              <li class="menu__item">
+              <li class="menu__item ">
                 produtos
               </li>
             </a>
@@ -91,6 +97,7 @@
             <a href="sobre.html">
               <li class="menu__item">
                 sobre
+                <div class="page-active"></div>
               </li>
             </a>
 
@@ -104,41 +111,96 @@
       </nav>
     </header>
 
-    <main class="home">
-      <!-- Background -->
-      <div class="home__bg home__bg--back"></div>
-      <div class="home__bg home__bg--gradient"></div>
-      <div class="home__bg home__bg--front"></div>
+    <main class="sobre">
+      <div class="sobre__bg">
+        <figure>
+          <img
+            srcset="
+              /images/sobre/sobre-bg-lg.png 1024w,
+              /images/sobre/sobre-bg-md.png  768w
+            "
+            src="/images/sobre/sobre-bg-sm.png"
+            alt="uma mulher"
+          />
+        </figure>
 
-      <div class="home__stripeBox">
-        <div class="home__stripe home__stripe--1"></div>
-        <div class="home__stripe home__stripe--2"></div>
-        <div class="home__stripe home__stripe--3"></div>
-        <div class="home__stripe--horizontal"></div>
+        <div></div>
       </div>
 
-      <!-- Title and Subtitle -->
-      <div class="home__text">
-        <div>
-          <h1>simples</h1>
-          <h1>mente</h1>
+      <div class="sobre__text">
+        <div class="sobre__title">
+          <h1>sobre</h1>
+          <h1>mim</h1>
         </div>
+
         <div>
           <p>
-            Estilo simples. Vida simples.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+            velit tortor, venenatis sed magna sed, varius sollicitudin risus.
+            Vestibulum accumsan nisi non imperdiet lobortis. Morbi scelerisque
+            ipsum sed leo elementum, nec suscipit augue placerat. Etiam
+            scelerisque nisl eu aliquam porttitor. Nunc augue lorem, iaculis non
+            diam id, fermentum porta leo. Etiam euismod laoreet lacus in cursus.
+            Phasellus erat nunc, scelerisque nec est ut, vulputate varius felis.
+            Vivamus in vulputate libero. Vestibulum euismod tincidunt volutpat.
+            In eu lacus pharetra neque semper cursus. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit.
+          </p>
+          <p>
+            Donec vitae egestas nunc, semper aliquet ex. Proin euismod iaculis
+            odio eget ultrices. Duis a leo vitae turpis vehicula semper et vitae
+            nunc. Morbi scelerisque leo risus, id vehicula nisi finibus ac.
+            Aenean fringilla nulla eget.
           </p>
         </div>
       </div>
 
-      <!-- Explore Button -->
-      <div class="home__explore">
-        <button>
-          <a href="produtos.html">
-            Explore nossos produtos
-          </a>
-        </button>
+      <div class="sobre__logo">
+        <div>
+          <h1>simples</h1>
+          <h1>mente</h1>
+        </div>
       </div>
     </main>
+
+    <footer>
+      <nav class="footer__nav">
+        <ul>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="produtos.html">produtos</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="sobre.html">sobre</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="contato.html">contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bar bar--sm"></div>
+      <div class="bar bar--md"></div>
+      <div class="bar bar--lg bar--marginBottom">
+        <p>
+          Criado por
+        </p>
+        <a href="https://vinicius-bortoletto.netlify.com/">
+          <img
+            src="/images/footer/footer-logo.svg"
+            alt="vinicius bortoletto logo"
+          />
+        </a>
+      </div>
+    </footer>
 
     <script src="main.js?cb=1580239573116"></script>
   </body>

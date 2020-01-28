@@ -1,0 +1,44 @@
+.sobre {
+  &__text {
+    margin: -10rem 10vw 15rem 10vw;
+    @include flex-center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    p {
+      text-align: justify;
+      margin-bottom: 1rem;
+      text-indent: 1rem;
+      line-height: 1.3;
+
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 4rem;
+    font-family: $ff-dft;
+    line-height: 0.8;
+    margin-bottom: 4rem;
+  }
+}
+
+@include media(500px) {
+  .sobre__title {
+    font-size: 6rem;
+  }
+}
+
+@include media(800px) {
+  .sobre {
+    &__text {
+      margin: -30rem 20vw 15rem 20vw;
+    }
+
+    &__title {
+      font-size: 10rem;
+    }
+  }
+}

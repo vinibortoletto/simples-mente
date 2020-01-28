@@ -1,0 +1,12 @@
+.produtos__title {
+  font-size: 3rem;
+  margin: 2rem 5vw 4rem 5vw;
+  font-weight: normal;
+  opacity: 0.2;
+}
+
+@include media(800px) {
+  .produtos__title {
+    font-size: 4rem;
+  }
+}

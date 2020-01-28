@@ -1,0 +1,16 @@
+.produtos__bg {
+  @include size(100%, 35rem);
+  border-top: 30px double rgba($c-black, 0.02);
+  border-right: 30px double rgba($c-black, 0.05);
+  border-bottom: 30px double rgba($c-black, 0.1);
+
+  position: absolute;
+  top: 9.5rem;
+  left: -20vw;
+}
+
+@include media(800px) {
+  .produtos__bg {
+    height: 50rem;
+  }
+}

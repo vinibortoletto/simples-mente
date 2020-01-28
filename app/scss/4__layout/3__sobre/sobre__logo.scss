@@ -1,0 +1,11 @@
+.sobre__logo {
+  display: grid;
+  justify-items: center;
+
+  h1 {
+    font-family: $ff-special;
+    font-weight: normal;
+    font-size: 1.5rem;
+    text-align: right;
+  }
+}
