@@ -1,11 +1,5 @@
 // Initialize modules
-const {
-  src,
-  dest,
-  watch,
-  series,
-  parallel
-} = require("gulp");
+const { src, dest, watch, series, parallel } = require("gulp");
 
 const browserSync = require("browser-sync").create();
 
@@ -20,8 +14,6 @@ const concat = require("gulp-concat");
 const terser = require("gulp-terser");
 
 const replace = require("gulp-replace");
-
-
 
 // SCSS task
 function scssTask() {

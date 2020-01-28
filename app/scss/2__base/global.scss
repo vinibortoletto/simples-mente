@@ -18,6 +18,11 @@ i {
   color: $c-black;
 }
 
+.flickity-page-dots,
+.flickity-button {
+  display: none;
+}
+
 @keyframes pageTransition {
   from {
     opacity: 0;

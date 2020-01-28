@@ -45,9 +45,14 @@
       rel="stylesheet"
     />
 
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1580133449403" />
+    <link rel="stylesheet" href="main.css?cb=1580229308516" />
   </head>
 
   <body>
@@ -111,8 +116,223 @@
       </nav>
     </header>
 
-    <main class="produtos"></main>
+    <main class="produtos">
+      <div class="produtos__bg"></div>
 
-    <script src="main.js?cb=1580133449403"></script>
+      <div class="produtos__title">
+        <h1>nossos</h1>
+        <h1>produtos</h1>
+      </div>
+      <div class="carousel produtos__gallery">
+        <div class="gallery__item">
+          <figure>
+            <img
+              class="galleryItem__img"
+              srcset="/images/produtos/produtos-1-md.jpg 1024w"
+              src="images/produtos/produtos-1-sm.jpg"
+              alt="tênis"
+            />
+          </figure>
+
+          <div class="galleryItem__text">
+            <div>
+              <h1 class="galleryItem__title">Título do Produto</h1>
+              <h2 class="galleryItem__price">
+                <span>R$100,00</span> - R$50,00
+              </h2>
+            </div>
+
+            <div class="galleryItem__btnBox">
+              <button class="galleryItem__btn">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <figure>
+            <img
+              class="galleryItem__img"
+              srcset="/images/produtos/produtos-2-md.jpg 1024w"
+              src="images/produtos/produtos-2-sm.jpg"
+              alt="camisas"
+            />
+          </figure>
+
+          <div class="galleryItem__text">
+            <div>
+              <h1 class="galleryItem__title">Título do Produto</h1>
+              <h2 class="galleryItem__price">
+                <span>R$100,00</span> - R$50,00
+              </h2>
+            </div>
+
+            <div class="galleryItem__btnBox">
+              <button class="galleryItem__btn">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <figure>
+            <img
+              class="galleryItem__img"
+              srcset="/images/produtos/produtos-3-md.jpg 1024w"
+              src="images/produtos/produtos-3-sm.jpg"
+              alt="tênis"
+            />
+          </figure>
+
+          <div class="galleryItem__text">
+            <div>
+              <h1 class="galleryItem__title">Título do Produto</h1>
+              <h2 class="galleryItem__price">
+                <span>R$100,00</span> - R$50,00
+              </h2>
+            </div>
+
+            <div class="galleryItem__btnBox">
+              <button class="galleryItem__btn">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <figure>
+            <img
+              class="galleryItem__img"
+              srcset="/images/produtos/produtos-4-md.jpg 1024w"
+              src="images/produtos/produtos-4-sm.jpg"
+              alt="tênis"
+            />
+          </figure>
+
+          <div class="galleryItem__text">
+            <div>
+              <h1 class="galleryItem__title">Título do Produto</h1>
+              <h2 class="galleryItem__price">
+                <span>R$100,00</span> - R$50,00
+              </h2>
+            </div>
+
+            <div class="galleryItem__btnBox">
+              <button class="galleryItem__btn">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <figure>
+            <img
+              class="galleryItem__img"
+              srcset="/images/produtos/produtos-5-md.jpg 1024w"
+              src="images/produtos/produtos-5-sm.jpg"
+              alt="calças"
+            />
+          </figure>
+
+          <div class="galleryItem__text">
+            <div>
+              <h1 class="galleryItem__title">Título do Produto</h1>
+              <h2 class="galleryItem__price">
+                <span>R$100,00</span> - R$50,00
+              </h2>
+            </div>
+
+            <div class="galleryItem__btnBox">
+              <button class="galleryItem__btn">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery__item">
+          <figure>
+            <img
+              class="galleryItem__img"
+              srcset="/images/produtos/produtos-6-md.jpg 1024w"
+              src="images/produtos/produtos-6-sm.jpg"
+              alt="várias peças de roupa"
+            />
+          </figure>
+
+          <div class="galleryItem__text">
+            <div>
+              <h1 class="galleryItem__title">Título do Produto</h1>
+              <h2 class="galleryItem__price">
+                <span>R$100,00</span> - R$50,00
+              </h2>
+            </div>
+
+            <div class="galleryItem__btnBox">
+              <button class="galleryItem__btn">
+                <i class="fas fa-cart-plus"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <nav class="footer__nav">
+        <ul>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="produtos.html">produtos</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="sobre.html">sobre</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="contato.html">contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bar bar--sm"></div>
+      <div class="bar bar--md"></div>
+      <div class="bar bar--lg bar--marginBottom">
+        <p>
+          Criado por
+        </p>
+        <a href="https://vinicius-bortoletto.netlify.com/">
+          <img
+            src="/images/footer/footer-logo.svg"
+            alt="vinicius bortoletto logo"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <script src="main.js?cb=1580229308516"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <script>
+      const elem = document.querySelector(".carousel");
+      const flkty = new Flickity(elem, {
+        cellAlign: "center",
+        contain: false,
+        autoPlay: true,
+        wrapAround: true
+      });
+    </script>
   </body>
 </html>

@@ -1,0 +1,47 @@
+footer {
+  margin-top: 15rem;
+  font-size: 0.8rem;
+
+  .bar {
+    width: 100%;
+    background-color: $c-black;
+    margin-bottom: 0.5rem;
+
+    &--marginBottom {
+      margin-bottom: 0;
+    }
+
+    &--sm {
+      height: 0.3rem;
+    }
+    &--md {
+      height: 0.5rem;
+    }
+    &--lg {
+      height: 5rem;
+      @include flex-center;
+      color: $c-white;
+
+      p {
+        margin-right: 0.5rem;
+      }
+
+      img {
+        width: 3rem;
+      }
+    }
+  }
+}
+
+.footer__nav {
+  @include flex-center;
+  margin-bottom: 1rem;
+
+  ul {
+    display: flex;
+  }
+
+  span {
+    margin: 0 0.5rem;
+  }
+}

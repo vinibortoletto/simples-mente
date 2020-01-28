@@ -2,7 +2,7 @@
   position: absolute;
   z-index: -1;
 
-  background-image: url("/images/home-bg-lg.png");
+  background-image: url("/images/home/home-bg-sm.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -46,18 +46,17 @@
     &--back {
       outline-offset: -100px;
     }
-    // &--gradient,
-    // &--front {
-    // right: -50vw;
-    // }
   }
 }
 
-// @include media(900px) {
-//   .home__bg {
-//     &--gradient,
-//     &--front {
-//       right: -45vw;
-//     }
-//   }
-// }
+@include media(768px) {
+  .home__bg {
+    background-image: url("/images/home/home-bg-md.png");
+  }
+}
+
+@include media(1024px) {
+  .home__bg {
+    background-image: url("/images/home/home-bg-lg.png");
+  }
+}
