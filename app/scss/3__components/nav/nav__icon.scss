@@ -16,7 +16,12 @@
 }
 
 @include media(900px) {
-  .nav__icons {
+  #btn__menu {
     display: none;
+  }
+
+  .nav__icon {
+    font-size: 1rem;
+    margin-right: 0;
   }
 }

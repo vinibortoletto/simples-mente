@@ -28,8 +28,20 @@ function scssTask() {
 
 // JS task
 function jsTask() {
-  return src("app/js/**/*.js")
+  return src("app/js/*.js")
     .pipe(concat("main.js"))
+    .pipe(
+      terser({
+        keep_fnames: true,
+        mangle: false
+      })
+    )
+    .pipe(dest("dist"))
+    .pipe(browserSync.stream());
+}
+function jsFormTask() {
+  return src("app/js/form/*.js")
+    .pipe(concat("form.js"))
     .pipe(
       terser({
         keep_fnames: true,
@@ -57,9 +69,16 @@ function watchTask() {
     }
   });
 
-  watch(["app/scss/**/*.scss", "app/js/**/*.js"], parallel(scssTask, jsTask));
+  watch(
+    ["app/scss/**/*.scss", "app/js/**/*.js"],
+    parallel(scssTask, jsTask, jsFormTask)
+  );
   watch("./dist/*.html").on("change", browserSync.reload);
 }
 
 // Deafult task
-exports.default = series(parallel(scssTask, jsTask), cacheBustTask, watchTask);
+exports.default = series(
+  parallel(scssTask, jsTask, jsFormTask),
+  cacheBustTask,
+  watchTask
+);

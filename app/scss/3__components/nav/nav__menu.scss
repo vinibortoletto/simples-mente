@@ -16,7 +16,7 @@
 
 .menu {
   &__list {
-    display: inline-block;
+    // display: inline-block;
     text-align: center;
   }
 
@@ -37,11 +37,16 @@
 
 @include media(900px) {
   .nav__menu {
-    transform: translateY(0);
-    background-color: transparent;
     height: 5rem;
-    padding: 0 5vw;
+
     justify-content: flex-end;
+    position: static;
+    transform: translateY(0);
+
+    padding: 0;
+    margin-right: 2rem;
+
+    background-color: transparent;
   }
 
   .menu {
@@ -49,7 +54,7 @@
       display: flex;
 
       a {
-        margin-right: 5vw;
+        margin-right: 0.5rem;
 
         &:nth-last-child(1) {
           margin-right: 0;
@@ -58,12 +63,20 @@
     }
 
     &__item {
-      font-size: 0.8rem;
+      position: relative;
       margin-bottom: 0;
+
+      font-size: 0.8rem;
       color: $c-black;
 
       .page-active {
         @include size(5px);
+
+        position: absolute;
+        left: 50%;
+        bottom: 5px;
+        transform: translateX(-50%);
+
         background-color: $c-black;
         border-radius: 10rem;
         margin: 0.2rem auto 0 auto;

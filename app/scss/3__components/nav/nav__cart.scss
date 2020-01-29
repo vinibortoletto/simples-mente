@@ -13,5 +13,13 @@
   border-radius: 100%;
   background-color: $c-blue;
   font-weight: bold;
-  color: $c-black;
+  color: $c-white;
+}
+
+@include media(900px) {
+  .marker__circle {
+    @include size(15px);
+    font-size: 0.6rem;
+    right: 0;
+  }
 }
