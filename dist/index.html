@@ -47,12 +47,13 @@
 
     <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1580333930055" />
+    <link rel="stylesheet" href="main.css?cb=1580759678373" />
   </head>
 
   <body>
     <header>
       <nav class="nav">
+        <!-- Logo -->
         <a href="index.html">
           <div class="nav__logo">
             <span>simples</span>
@@ -90,23 +91,158 @@
           </ul>
         </div>
 
+        <!-- Icons -->
         <div class="nav__icons">
           <!-- Cart Icon-->
           <button>
-            <a href="">
-              <div class="cart__marker">
-                <div class="marker__circle">0</div>
-              </div>
-              <i
-                class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
-              ></i>
-            </a>
+            <div class="cart__marker">
+              <div class="marker__circle">0</div>
+            </div>
+            <i
+              class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
+            ></i>
           </button>
 
           <!-- Menu Icon -->
           <button id="btn__menu">
             <i class="nav__icon fas fa-plus"></i>
           </button>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart__overlay">
+          <div class="cart">
+            <div class="cart__header">
+              <h1>carrinho</h1>
+              <button>
+                <i class="fas fa-arrow-left"></i>
+              </button>
+            </div>
+
+            <!-- Cart Item -->
+            <div class="cart__content">
+              <div class="cart__item">
+                <div>
+                  <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
+                </div>
+
+                <div>
+                  <h4>título do produto</h4>
+                  <h5>R$ 50,00</h5>
+                  <button class="item__remove">
+                    remover
+                  </button>
+                </div>
+
+                <div class="item__amountBox">
+                  <button>
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+
+                  <p>1</p>
+
+                  <button>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cart__item">
+                <div>
+                  <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
+                </div>
+
+                <div>
+                  <h4>título do produto</h4>
+                  <h5>R$ 50,00</h5>
+                  <button class="item__remove">
+                    remover
+                  </button>
+                </div>
+
+                <div class="item__amountBox">
+                  <button>
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+
+                  <p>1</p>
+
+                  <button>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cart__item">
+                <div>
+                  <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
+                </div>
+
+                <div>
+                  <h4>título do produto</h4>
+                  <h5>R$ 50,00</h5>
+                  <button class="item__remove">
+                    remover
+                  </button>
+                </div>
+
+                <div class="item__amountBox">
+                  <button>
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+
+                  <p>1</p>
+
+                  <button>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="cart__item">
+                <div>
+                  <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
+                </div>
+
+                <div>
+                  <h4>título do produto</h4>
+                  <h5>R$ 50,00</h5>
+                  <button class="item__remove">
+                    remover
+                  </button>
+                </div>
+
+                <div class="item__amountBox">
+                  <button>
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+
+                  <p>1</p>
+
+                  <button>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Total -->
+            <div class="cart__footer">
+              <div class="cart__total">
+                <h3>Total: R$ 100,00</h3>
+              </div>
+
+              <!-- Buttons -->
+              <div class="cart__btnBox">
+                <button class="cart__btn cart__btn--primary">
+                  finalizar compra
+                </button>
+                <button class="cart__btn cart__btn--secondary">
+                  esvaziar carrinho
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -147,6 +283,6 @@
       </div>
     </main>
 
-    <script src="main.js?cb=1580333930055"></script>
+    <script src="main.js?cb=1580759678373"></script>
   </body>
 </html>

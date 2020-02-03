@@ -1,0 +1,17 @@
+@import "cart__overlay";
+@import "cart__header";
+@import "cart__content";
+@import "cart__footer";
+
+.cart {
+  @include size(100%);
+  max-width: 25rem;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  background-color: $c-white;
+  @include transition(0.2s, 0s);
+  transform: translateX(100%);
+}

@@ -1,0 +1,11 @@
+.cart__overlay {
+  @include size(100%);
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  background-color: rgba($c-black, 0.5);
+  @include transition(0.2s, 0s);
+  visibility: hidden;
+}

@@ -1,0 +1,28 @@
+.cart {
+  &__header {
+    padding: 2rem;
+    background-color: $c-black;
+    margin-bottom: 2rem;
+    color: $c-white;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: normal;
+      text-transform: capitalize;
+      text-align: center;
+    }
+
+    button {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      i {
+        color: $c-white;
+        font-size: 1rem;
+        margin: 1rem 0 0 1rem;
+        opacity: 0.6;
+      }
+    }
+  }
+}
