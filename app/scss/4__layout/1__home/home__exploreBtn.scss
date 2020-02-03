@@ -1,32 +1,47 @@
 .home__explore {
   @include flex-center;
 
-  position: absolute;
-  z-index: 1;
-  margin-top: 3rem;
+  // position: absolute;
+  // z-index: 1;
+  margin-top: 5rem;
 
   button {
+    width: 13rem;
     padding: 2rem;
+
+    font-style: italic;
     font-weight: bold;
-    background-color: $c-black;
+    font-size: 1.3rem;
+
+    border: 5px solid $c-black;
+    border-top-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
 
     a {
-      color: $c-white;
+      color: $c-black;
+    }
+
+    &:hover {
+      background-color: $c-black;
+
+      a {
+        color: $c-white;
+      }
     }
   }
 }
 
 @include media(500px) {
   .home__explore {
+    position: absolute;
     right: 10vw;
     bottom: 60px;
+    margin-top: 0;
 
     button {
-      padding: 3rem;
+      width: 20rem;
 
-      &:hover {
-        background-color: #212121;
-      }
+      // padding: 3rem;
     }
   }
 }
