@@ -47,7 +47,7 @@
 
     <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1580768096657" />
+    <link rel="stylesheet" href="main.css?cb=1580930646268" />
   </head>
 
   <body>
@@ -122,14 +122,14 @@
           <label for="nome">nome:</label>
           <input id="nome" type="text" placeholder="seu nome completo" />
 
-          <div class="erro erro--nome">&nbsp</div>
+          <div id="erro--nome" class="erro erro--nome">&nbsp</div>
         </div>
 
         <div class="form__item">
           <label for="email">email:</label>
           <input id="email" type="text" placeholder="seu@email.com" />
 
-          <div class="erro erro--email">&nbsp</div>
+          <div id="erro--email" class="erro erro--email">&nbsp</div>
         </div>
 
         <div class="form__item">
@@ -140,7 +140,7 @@
             placeholder="produtos, venda, troca, etc"
           />
 
-          <div class="erro erro--assunto">&nbsp</div>
+          <div id="erro--assunto" class="erro erro--assunto">&nbsp</div>
         </div>
 
         <div class="form__item">
@@ -152,14 +152,21 @@
             placeholder="olá, gostaria de..."
           ></textarea>
 
-          <div class="erro erro--mensagem">
+          <div id="erro--mensagem" class="erro erro--mensagem">
             &nbsp
           </div>
         </div>
 
         <div class="form__btnBox">
-          <button class="form__btn form__btn--cancelar">cancelar</button>
-          <button class="form__btn form__btn--enviar">enviar</button>
+          <button
+            id="form__btn--cancelar"
+            class="form__btn form__btn--cancelar"
+          >
+            cancelar
+          </button>
+          <button id="form__btn--enviar" class="form__btn form__btn--enviar">
+            enviar
+          </button>
         </div>
       </form>
     </main>
@@ -203,7 +210,7 @@
       </div>
     </footer>
 
-    <script src="main.js?cb=1580768096657"></script>
-    <script src="form.js?cb=1580768096657"></script>
+    <script src="main.js?cb=1580930646268"></script>
+    <!-- <script src="form.js?cb=1580930646268"></script> -->
   </body>
 </html>
