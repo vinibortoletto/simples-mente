@@ -1,1 +1,1 @@
-// class Storage {}
+class Storage {}

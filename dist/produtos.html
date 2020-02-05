@@ -52,12 +52,13 @@
     />
     <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1580930646268" />
+    <link rel="stylesheet" href="main.css?cb=1580936579649" />
   </head>
 
   <body>
     <header>
       <nav class="nav">
+        <!-- Logo -->
         <a href="index.html">
           <div class="nav__logo">
             <span>simples</span>
@@ -71,13 +72,13 @@
             <a href="index.html">
               <li class="menu__item">
                 home
+                <div class="page-active"></div>
               </li>
             </a>
 
             <a href="produtos.html">
               <li class="menu__item ">
                 produtos
-                <div class="page-active"></div>
               </li>
             </a>
 
@@ -95,23 +96,83 @@
           </ul>
         </div>
 
+        <!-- Icons -->
         <div class="nav__icons">
           <!-- Cart Icon-->
-          <button>
-            <a href="">
-              <div class="cart__marker">
-                <div class="marker__circle">0</div>
-              </div>
-              <i
-                class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
-              ></i>
-            </a>
+          <button id="nav__icon--cart">
+            <div class="cart__marker">
+              <div id="cart__marker" class="marker__circle">0</div>
+            </div>
+            <i
+              class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
+            ></i>
           </button>
 
           <!-- Menu Icon -->
           <button id="btn__menu">
             <i class="nav__icon fas fa-plus"></i>
           </button>
+        </div>
+
+        <!-- Cart -->
+        <div id="cart__overlay" class="cart__overlay">
+          <div id="cart" class="cart">
+            <div class="cart__header">
+              <h1>carrinho</h1>
+              <button id="cart__closeBtn">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+            </div>
+
+            <!-- Cart Item -->
+            <div id="cart__content" class="cart__content">
+              <div class="cart__item">
+                <div>
+                  <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
+                </div>
+
+                <div>
+                  <h4>título do produto</h4>
+                  <h5>R$ 50,00</h5>
+                  <button class="item__remove">
+                    remover
+                  </button>
+                </div>
+
+                <div class="item__amountBox">
+                  <button>
+                    <i class="fas fa-chevron-up"></i>
+                  </button>
+
+                  <p>1</p>
+
+                  <button>
+                    <i class="fas fa-chevron-down"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Total -->
+            <div class="cart__footer">
+              <div class="cart__total">
+                <h3 id="cart__total">Total: R$ 100,00</h3>
+              </div>
+
+              <!-- Buttons -->
+              <div class="cart__btnBox">
+                <button class="cart__btn cart__btn--primary">
+                  finalizar compra
+                </button>
+                <button
+                  id="cart__btn--empty"
+                  class="cart__btn cart__btn--secondary"
+                >
+                  esvaziar carrinho
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -322,10 +383,11 @@
       </div>
     </footer>
 
-    <script src="main.js?cb=1580930646268"></script>
+    <!-- Contentful ----------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
+    <!-- Flickity (Image gallery) --------------------------------------------------------------------->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
     <script>
       const elem = document.querySelector(".carousel");
       const flkty = new Flickity(elem, {
@@ -335,5 +397,8 @@
         wrapAround: true
       });
     </script>
+
+    <!-- Main.js -------------------------------------------------------------------------------------->
+    <script src="main.js?cb=1580936579649"></script>
   </body>
 </html>

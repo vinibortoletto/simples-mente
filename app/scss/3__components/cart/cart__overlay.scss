@@ -9,3 +9,7 @@
   @include transition(0.2s, 0s);
   visibility: hidden;
 }
+
+.toggleOverlay {
+  visibility: visible;
+}

@@ -15,3 +15,7 @@
   @include transition(0.2s, 0s);
   transform: translateX(100%);
 }
+
+.toggleCart {
+  transform: translateX(0);
+}

@@ -1,20 +1,32 @@
-// // CartBtn from Navbar
-// const cartBtn = document.getElementById("nav__icon--cart");
-// const cartMarker = document.getElementById("cart__marker"); //cartItems
+// Client from Contentful -----------------------------------------------------------------------------
+const client = contentful.createClient({
+  space: "dsfbqtjs2w7x",
+  accessToken: "nGCoarI8AWuvW7D6RQNLtKDiALXngKQ47RYb5P8ELRo"
+});
 
-// // Cart component
-// const closeCartBtn = document.getElementById("cart__closeBtn");
-// const emptyCartBtn = document.getElementById("cart__btn--empty");
-// const cartDOM = document.getElementById("cart");
-// const cartOverlay = document.getElementById("cart__overlay");
-// const cartTotal = document.getElementById("cart__total");
-// const cartContent = document.getElementById("cart__content");
+// CartBtn from Navbar --------------------------------------------------------------------------------
+const cartBtn = document.getElementById("nav__icon--cart");
+const cartMarker = document.getElementById("cart__marker"); //cartItems
 
-// // Products page
-// const productsDOM = document.getElementById("produtos__gallery");
+// Cart component -------------------------------------------------------------------------------------
+const closeCartBtn = document.getElementById("cart__closeBtn");
+const emptyCartBtn = document.getElementById("cart__btn--empty");
+const cartDOM = document.getElementById("cart");
+const cartOverlay = document.getElementById("cart__overlay");
+const cartTotal = document.getElementById("cart__total");
+const cartContent = document.getElementById("cart__content");
 
-// // Arrays
-// let cart = [];
-// let buttonsDOM = [];
+// Products page --------------------------------------------------------------------------------------
+const productsDOM = document.getElementById("produtos__gallery");
 
-// document.addEventListener("DOMContentLoaded", () => {});
+// Arrays ---------------------------------------------------------------------------------------------
+let cart = [];
+let buttonsDOM = [];
+
+// Excutes only when the DOM Content is loaded---------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+  const products = new Products();
+  const ui = new UI();
+
+  ui.setupAPP();
+});
