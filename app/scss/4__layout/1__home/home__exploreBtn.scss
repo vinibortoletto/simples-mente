@@ -1,8 +1,5 @@
 .home__explore {
   @include flex-center;
-
-  // position: absolute;
-  // z-index: 1;
   margin-top: 5rem;
 
   button {
@@ -16,17 +13,11 @@
     border: 5px solid $c-black;
     border-top-left-radius: 1.5rem;
     border-bottom-right-radius: 1.5rem;
-
-    a {
-      color: $c-black;
-    }
+    color: $c-black;
 
     &:hover {
       background-color: $c-black;
-
-      a {
-        color: $c-white;
-      }
+      color: $c-white;
     }
   }
 }
@@ -40,8 +31,6 @@
 
     button {
       width: 20rem;
-
-      // padding: 3rem;
     }
   }
 }
