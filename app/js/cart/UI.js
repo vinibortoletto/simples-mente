@@ -177,8 +177,6 @@ class UI {
         let tempItem = cart.find(item => item.id === id);
         tempItem.amount = tempItem.amount - 1;
 
-        
-        
         if (tempItem.amount > 0) {
           this.setCartValues(cart);
           itemAmount.innerText = tempItem.amount;
@@ -229,5 +227,9 @@ class UI {
     cart = Storage.getCart();
     this.setCartValues(cart);
     this.populateCart(cart);
+
+    document.addEventListener("click", event => {
+      event.target.classList.contains("cart__overlay") && this.toggleCart();
+    });
   }
 }
