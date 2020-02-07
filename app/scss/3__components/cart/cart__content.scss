@@ -43,11 +43,12 @@
 
       h1 {
         font-size: 1.3rem;
-        margin: .5rem;
+        margin: 0.5rem;
       }
 
-      h2 {
-        color: rgba($c-black, 0.5);
+      a {
+        color: $c-blue;
+        text-decoration: underline;
       }
     }
 

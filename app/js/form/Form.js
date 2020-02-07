@@ -89,7 +89,6 @@ class MyForm {
 const myForm = new MyForm();
 
 // EXECUTES ONLY IF PAGE LOADED IS 'CONTATO' ----------------------------------------------------------------
-const mainContainer = document.querySelector("main");
 if (mainContainer.classList.contains("contato")) {
   formDOM.addEventListener("submit", event => {
     event.preventDefault();
