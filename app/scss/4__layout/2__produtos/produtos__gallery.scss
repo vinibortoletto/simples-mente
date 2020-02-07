@@ -7,6 +7,8 @@
     @include size(15rem);
     object-fit: cover;
     margin-bottom: 1rem;
+    border-top-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
   }
 
   &__text {
