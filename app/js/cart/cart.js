@@ -42,14 +42,3 @@ document.addEventListener("DOMContentLoaded", () => {
       ui.cardLogic();
     });
 });
-
-/* 
-
-  1. ToggleCard and setupAPP (UI)
-  2. Get products (Products)
-  3. Display products (UI)
-    - Instance products (DOMContentLoaded)
-  4. Save products (Storage)
-    -Instacnce saveProducts (DOMContentLoaded)
-  5. getGalleryItemBtns (UI) 
-*/

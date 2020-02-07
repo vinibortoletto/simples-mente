@@ -13,12 +13,8 @@ class Storage {
   }
 
   static getCart() {
-    // return (
-    //   localStorage.getItem("cart") && JSON.parse(localStorage.getItem("cart"))
-    // );
-
     return localStorage.getItem("cart")
-      ? JSON.parse(localStorage.getItem("cart")) //if there's items in localStorage, turn them into array and return
-      : []; // else, return empty array
+      ? JSON.parse(localStorage.getItem("cart"))
+      : [];
   }
 }
