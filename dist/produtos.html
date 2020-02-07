@@ -1,192 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Produtos | SimplesMente</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- FavIcon
+  <title>Produtos | SimplesMente</title>
+
+  <!-- FavIcon
    ------------------------------------------------------>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/images/favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/images/favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/images/favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/images/favicon/site.webmanifest" />
 
-    <!-- FontAwesome
+  <!-- FontAwesome
    ------------------------------------------------------>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
-      crossorigin="anonymous"
-    />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
-    <!-- Fonts
+  <!-- Fonts
    ------------------------------------------------------>
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Raleway&display=swap"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap" rel="stylesheet" />
 
-    <!-- Slider -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <!-- CSS
+  <!-- Slider -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+  <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1580936579649" />
-  </head>
+  <link rel="stylesheet" href="main.css?cb=1581104543524" />
+</head>
 
-  <body>
-    <header>
-      <nav class="nav">
-        <!-- Logo -->
-        <a href="index.html">
-          <div class="nav__logo">
-            <span>simples</span>
-            <span>mente</span>
-          </div>
-        </a>
-
-        <!-- Menu -->
-        <div class="nav__menu" id="nav__menu">
-          <ul class="menu__list">
-            <a href="index.html">
-              <li class="menu__item">
-                home
-                <div class="page-active"></div>
-              </li>
-            </a>
-
-            <a href="produtos.html">
-              <li class="menu__item ">
-                produtos
-              </li>
-            </a>
-
-            <a href="sobre.html">
-              <li class="menu__item">
-                sobre
-              </li>
-            </a>
-
-            <a href="contato.html">
-              <li class="menu__item menu__item--marginRight">
-                contato
-              </li>
-            </a>
-          </ul>
+<body>
+  <header>
+    <nav class="nav">
+      <!-- Logo -->
+      <a href="index.html">
+        <div class="nav__logo">
+          <span>simples</span>
+          <span>mente</span>
         </div>
+      </a>
 
-        <!-- Icons -->
-        <div class="nav__icons">
-          <!-- Cart Icon-->
-          <button id="nav__icon--cart">
-            <div class="cart__marker">
-              <div id="cart__marker" class="marker__circle">0</div>
-            </div>
-            <i
-              class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
-            ></i>
-          </button>
+      <!-- Menu -->
+      <div class="nav__menu" id="nav__menu">
+        <ul class="menu__list">
+          <a href="index.html">
+            <li class="menu__item">
+              home
+              <div class="page-active"></div>
+            </li>
+          </a>
 
-          <!-- Menu Icon -->
-          <button id="btn__menu">
-            <i class="nav__icon fas fa-plus"></i>
-          </button>
-        </div>
+          <a href="produtos.html">
+            <li class="menu__item ">
+              produtos
+            </li>
+          </a>
 
-        <!-- Cart -->
-        <div id="cart__overlay" class="cart__overlay">
-          <div id="cart" class="cart">
-            <div class="cart__header">
-              <h1>carrinho</h1>
-              <button id="cart__closeBtn">
-                <i class="fas fa-arrow-left"></i>
-              </button>
-            </div>
+          <a href="sobre.html">
+            <li class="menu__item">
+              sobre
+            </li>
+          </a>
 
-            <!-- Cart Item -->
-            <div id="cart__content" class="cart__content">
-              <div class="cart__item">
-                <div>
-                  <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
-                </div>
-
-                <div>
-                  <h4>título do produto</h4>
-                  <h5>R$ 50,00</h5>
-                  <button class="item__remove">
-                    remover
-                  </button>
-                </div>
-
-                <div class="item__amountBox">
-                  <button>
-                    <i class="fas fa-chevron-up"></i>
-                  </button>
-
-                  <p>1</p>
-
-                  <button>
-                    <i class="fas fa-chevron-down"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <!-- Total -->
-            <div class="cart__footer">
-              <div class="cart__total">
-                <h3 id="cart__total">Total: R$ 100,00</h3>
-              </div>
-
-              <!-- Buttons -->
-              <div class="cart__btnBox">
-                <button class="cart__btn cart__btn--primary">
-                  finalizar compra
-                </button>
-                <button
-                  id="cart__btn--empty"
-                  class="cart__btn cart__btn--secondary"
-                >
-                  esvaziar carrinho
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <main class="produtos">
-      <div class="produtos__bg"></div>
-
-      <div class="produtos__title">
-        <h1>nossos</h1>
-        <h1>produtos</h1>
+          <a href="contato.html">
+            <li class="menu__item menu__item--marginRight">
+              contato
+            </li>
+          </a>
+        </ul>
       </div>
 
-      <section id="produtos__gallery" class="carousel produtos__gallery">
-        <div class="gallery__item">
+      <!-- Icons -->
+      <div class="nav__icons">
+        <!-- Cart Icon-->
+        <button id="nav__icon--cart">
+          <div class="cart__marker">
+            <div id="cart__marker" class="marker__circle">0</div>
+          </div>
+          <i class="nav__icon nav__icon--marginRight fas fa-shopping-cart"></i>
+        </button>
+
+        <!-- Menu Icon -->
+        <button id="btn__menu">
+          <i class="nav__icon fas fa-plus"></i>
+        </button>
+      </div>
+
+      <!-- Cart -->
+      <div id="cart__overlay" class="cart__overlay">
+        <div id="cart" class="cart">
+          <div class="cart__header">
+            <h1>carrinho</h1>
+            <button id="cart__closeBtn">
+              <i class="fas fa-arrow-left"></i>
+            </button>
+          </div>
+
+          <!-- Cart Item -->
+          <div id="cart__content" class="cart__content">
+            <div class="cart__item--empty">
+              <h1>Seu carrinho está vazio!</h1>
+              <h2>Adicione alguns produtos</h2>
+            </div>
+          </div>
+
+          <!-- Total -->
+          <div class="cart__footer">
+            <div class="cart__total">
+              <h3 id="cart__total">
+                Total: R$ <span id="cart__total--value">100,00</span>
+              </h3>
+            </div>
+
+            <!-- Buttons -->
+            <div class="cart__btnBox">
+              <button class="cart__btn cart__btn--primary">
+                finalizar compra
+              </button>
+              <button id="cart__btn--empty" class="cart__btn cart__btn--secondary">
+                esvaziar carrinho
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="produtos">
+    <div class="produtos__bg"></div>
+
+    <div class="produtos__title">
+      <h1>nossos</h1>
+      <h1>produtos</h1>
+    </div>
+
+    <section id="produtos__gallery" class="carousel produtos__gallery">
+      <!-- <div class="gallery__item">
           <figure>
             <img
               class="galleryItem__img"
@@ -210,195 +163,54 @@
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
+    </section>
+  </main>
 
-        <div class="gallery__item">
-          <figure>
-            <img
-              class="galleryItem__img"
-              srcset="/images/produtos/produtos-2-md.jpg 1024w"
-              src="images/produtos/produtos-2-sm.jpg"
-              alt="camisas"
-            />
-          </figure>
+  <footer>
+    <nav class="footer__nav">
+      <ul>
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <span>|</span>
 
-          <div class="galleryItem__text">
-            <div>
-              <h1 class="galleryItem__title">Título do Produto</h1>
-              <h2 class="galleryItem__price">
-                <span>R$100,00</span> - R$50,00
-              </h2>
-            </div>
+        <li>
+          <a href="produtos.html">produtos</a>
+        </li>
+        <span>|</span>
 
-            <div class="galleryItem__btnBox">
-              <button class="galleryItem__btn">
-                <i class="fas fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+        <li>
+          <a href="sobre.html">sobre</a>
+        </li>
+        <span>|</span>
 
-        <div class="gallery__item">
-          <figure>
-            <img
-              class="galleryItem__img"
-              srcset="/images/produtos/produtos-3-md.jpg 1024w"
-              src="images/produtos/produtos-3-sm.jpg"
-              alt="tênis"
-            />
-          </figure>
+        <li>
+          <a href="contato.html">contato</a>
+        </li>
+      </ul>
+    </nav>
 
-          <div class="galleryItem__text">
-            <div>
-              <h1 class="galleryItem__title">Título do Produto</h1>
-              <h2 class="galleryItem__price">
-                <span>R$100,00</span> - R$50,00
-              </h2>
-            </div>
+    <div class="bar bar--sm"></div>
+    <div class="bar bar--md"></div>
+    <div class="bar bar--lg bar--marginBottom">
+      <p>
+        Criado por
+      </p>
+      <a href="https://vinicius-bortoletto.netlify.com/">
+        <img src="/images/footer/footer-logo.svg" alt="vinicius bortoletto logo" />
+      </a>
+    </div>
+  </footer>
 
-            <div class="galleryItem__btnBox">
-              <button class="galleryItem__btn">
-                <i class="fas fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+  <!-- Contentful ----------------------------------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
-        <div class="gallery__item">
-          <figure>
-            <img
-              class="galleryItem__img"
-              srcset="/images/produtos/produtos-4-md.jpg 1024w"
-              src="images/produtos/produtos-4-sm.jpg"
-              alt="tênis"
-            />
-          </figure>
+  <!-- Flickity (Image gallery) --------------------------------------------------------------------->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
-          <div class="galleryItem__text">
-            <div>
-              <h1 class="galleryItem__title">Título do Produto</h1>
-              <h2 class="galleryItem__price">
-                <span>R$100,00</span> - R$50,00
-              </h2>
-            </div>
+  <!-- Main.js -------------------------------------------------------------------------------------->
+  <script src="main.js?cb=1581104543524"></script>
+</body>
 
-            <div class="galleryItem__btnBox">
-              <button class="galleryItem__btn">
-                <i class="fas fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <figure>
-            <img
-              class="galleryItem__img"
-              srcset="/images/produtos/produtos-5-md.jpg 1024w"
-              src="images/produtos/produtos-5-sm.jpg"
-              alt="calças"
-            />
-          </figure>
-
-          <div class="galleryItem__text">
-            <div>
-              <h1 class="galleryItem__title">Título do Produto</h1>
-              <h2 class="galleryItem__price">
-                <span>R$100,00</span> - R$50,00
-              </h2>
-            </div>
-
-            <div class="galleryItem__btnBox">
-              <button class="galleryItem__btn">
-                <i class="fas fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="gallery__item">
-          <figure>
-            <img
-              class="galleryItem__img"
-              srcset="/images/produtos/produtos-6-md.jpg 1024w"
-              src="images/produtos/produtos-6-sm.jpg"
-              alt="várias peças de roupa"
-            />
-          </figure>
-
-          <div class="galleryItem__text">
-            <div>
-              <h1 class="galleryItem__title">Título do Produto</h1>
-              <h2 class="galleryItem__price">
-                <span>R$100,00</span> - R$50,00
-              </h2>
-            </div>
-
-            <div class="galleryItem__btnBox">
-              <button class="galleryItem__btn">
-                <i class="fas fa-cart-plus"></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <nav class="footer__nav">
-        <ul>
-          <li>
-            <a href="index.html">home</a>
-          </li>
-          <span>|</span>
-
-          <li>
-            <a href="produtos.html">produtos</a>
-          </li>
-          <span>|</span>
-
-          <li>
-            <a href="sobre.html">sobre</a>
-          </li>
-          <span>|</span>
-
-          <li>
-            <a href="contato.html">contato</a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="bar bar--sm"></div>
-      <div class="bar bar--md"></div>
-      <div class="bar bar--lg bar--marginBottom">
-        <p>
-          Criado por
-        </p>
-        <a href="https://vinicius-bortoletto.netlify.com/">
-          <img
-            src="/images/footer/footer-logo.svg"
-            alt="vinicius bortoletto logo"
-          />
-        </a>
-      </div>
-    </footer>
-
-    <!-- Contentful ----------------------------------------------------------------------------------->
-    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-
-    <!-- Flickity (Image gallery) --------------------------------------------------------------------->
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-    <script>
-      const elem = document.querySelector(".carousel");
-      const flkty = new Flickity(elem, {
-        cellAlign: "center",
-        contain: false,
-        autoPlay: true,
-        wrapAround: true
-      });
-    </script>
-
-    <!-- Main.js -------------------------------------------------------------------------------------->
-    <script src="main.js?cb=1580936579649"></script>
-  </body>
 </html>

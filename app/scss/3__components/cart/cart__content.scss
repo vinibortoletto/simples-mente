@@ -16,6 +16,9 @@
 
     text-transform: capitalize;
     line-height: 1.3;
+    margin-bottom: 0.5rem;
+
+    @include transition(0.2s, 0s);
 
     &:nth-last-child(1) {
       margin-bottom: 0;
@@ -32,6 +35,20 @@
     h4 {
       font-size: 0.8rem;
       color: rgba($c-black, 0.5);
+    }
+
+    &--empty {
+      text-align: center;
+      display: none;
+
+      h1 {
+        font-size: 1.3rem;
+        margin: .5rem;
+      }
+
+      h2 {
+        color: rgba($c-black, 0.5);
+      }
     }
 
     .item__remove {

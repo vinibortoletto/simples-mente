@@ -26,6 +26,15 @@
 
   &__btn {
     font-size: 1.2rem;
+    text-align: right;
+
+    p {
+      font-size: 0.8rem;
+
+      &:nth-last-child(1) {
+        color: $c-blue;
+      }
+    }
   }
 }
 
