@@ -1,0 +1,40 @@
+.produtoSobre .produto__btns {
+  @include flex-center;
+  flex-direction: column;
+  align-items: start;
+  margin: 0 10vw 3rem 10vw;
+
+  input {
+    @include size(100%, 3rem);
+    padding: 1rem;
+    border: 1px solid $c-black;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    @include size(100%, 3rem);
+    padding: 1rem;
+
+    background-color: $c-black;
+    color: $c-white;
+
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+
+@include media(700px) {
+  .produtoSobre .produto__btns {
+    width: 100%;
+    order: 3;
+    margin: 0;
+
+    input {
+      width: 6rem;
+    }
+
+    button {
+      height: 4rem;
+    }
+  }
+}

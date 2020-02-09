@@ -1,0 +1,31 @@
+@import "produto__galeria";
+@import "produto__btns";
+@import "produto__cabecalho";
+@import "produto__descricao";
+
+.produtoSobre {
+  margin-top: 3rem;
+  padding: 0 10vw;
+}
+
+@include media(700px) {
+  .produtoSobre {
+    .produtoSobre__produto {
+      display: flex;
+    }
+
+    .secondary-column-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      margin-left: 3rem;
+    }
+  }
+}
+
+@include media(900px) {
+  .produtoSobre {
+    padding: 0 15vw;
+  }
+}

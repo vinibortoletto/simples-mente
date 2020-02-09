@@ -1,0 +1,16 @@
+.produtoSobre .produto__descricao {
+  padding: 0 10vw;
+
+  p {
+    margin-bottom: 0.5rem;
+    text-align: justify;
+  }
+}
+
+@include media(700px) {
+  .produtoSobre .produto__descricao {
+    padding: 0;
+    order: 2;
+    margin-bottom: 2rem;
+  }
+}

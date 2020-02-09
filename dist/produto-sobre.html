@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Sobre | SimplesMente</title>
+    <title>Produtos | SimplesMente</title>
 
     <!-- FavIcon
    ------------------------------------------------------>
@@ -45,9 +45,14 @@
       rel="stylesheet"
     />
 
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1581275066608" />
+    <link rel="stylesheet" href="main.css?cb=1581270803065" />
   </head>
 
   <body>
@@ -73,13 +78,13 @@
             <a href="produtos.html">
               <li class="menu__item ">
                 produtos
+                <div class="page-active"></div>
               </li>
             </a>
 
             <a href="sobre.html">
               <li class="menu__item">
                 sobre
-                <div class="page-active"></div>
               </li>
             </a>
 
@@ -153,56 +158,40 @@
       </nav>
     </header>
 
-    <main class="sobre">
-      <div class="sobre__bg">
-        <figure>
-          <img
-            srcset="
-              /images/sobre/sobre-bg-lg.png 1024w,
-              /images/sobre/sobre-bg-md.png  768w
-            "
-            src="/images/sobre/sobre-bg-sm.png"
-            alt="uma mulher"
-          />
-        </figure>
+    <main class="produtoSobre">
+      <section class="produtoSobre__produto">
+        <div class="produto__galeria">
+          <img src="/images/produtos/produtos-1-md.jpg" alt="produto" />
 
-        <div></div>
-      </div>
-
-      <section class="sobre__text">
-        <div class="sobre__title">
-          <h1>sobre</h1>
-          <h1>mim</h1>
+          <div>
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+          </div>
         </div>
 
-        <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            velit tortor, venenatis sed magna sed, varius sollicitudin risus.
-            Vestibulum accumsan nisi non imperdiet lobortis. Morbi scelerisque
-            ipsum sed leo elementum, nec suscipit augue placerat. Etiam
-            scelerisque nisl eu aliquam porttitor. Nunc augue lorem, iaculis non
-            diam id, fermentum porta leo. Etiam euismod laoreet lacus in cursus.
-            Phasellus erat nunc, scelerisque nec est ut, vulputate varius felis.
-            Vivamus in vulputate libero. Vestibulum euismod tincidunt volutpat.
-            In eu lacus pharetra neque semper cursus. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit.
-          </p>
-          <p>
-            Donec vitae egestas nunc, semper aliquet ex. Proin euismod iaculis
-            odio eget ultrices. Duis a leo vitae turpis vehicula semper et vitae
-            nunc. Morbi scelerisque leo risus, id vehicula nisi finibus ac.
-            Aenean fringilla nulla eget.
-          </p>
+        <div class="secondary-column-wrapper">
+          <div class="produto__btns">
+            <input type="number" min="1" value="1" />
+            <button>adicionar ao carrinho</button>
+          </div>
+
+          <div class="produto__cabecalho">
+            <h1>título do produto</h1>
+            <h2>R$50,00</h2>
+          </div>
+
+          <div class="produto__descricao">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae qui
+              quis odit eveniet nisi molestias nihil in soluta neque omnis.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, est.
+            </p>
+          </div>
         </div>
       </section>
-
-      <div class="sobre__logo">
-        <div>
-          <h1>simples</h1>
-          <h1>mente</h1>
-        </div>
-      </div>
     </main>
 
     <footer>
@@ -247,7 +236,10 @@
     <!-- Contentful ----------------------------------------------------------------------------------->
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
+    <!-- Flickity (Image gallery) ------------------------------------------------->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <!-- Main.js -------------------------------------->
-    <script src="main.js?cb=1581275066608"></script>
+    <script src="main.js?cb=1581270803065"></script>
   </body>
 </html>

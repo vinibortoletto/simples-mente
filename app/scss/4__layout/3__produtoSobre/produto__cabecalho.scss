@@ -1,0 +1,31 @@
+.produtoSobre .produto__cabecalho {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.3rem;
+
+  h1 {
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: rgba($c-black, 0.7);
+  }
+}
+
+@include media(700px) {
+  .produtoSobre .produto__cabecalho {
+    text-align: left;
+    order: 1;
+  }
+}
+
+@include media(1000px) {
+  .produtoSobre .produto__cabecalho {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+}

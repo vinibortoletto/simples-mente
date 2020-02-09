@@ -129,7 +129,6 @@ table {
 }
 
 body {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -137,7 +136,7 @@ body {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 figure {
@@ -167,4 +166,8 @@ textarea {
   resize: none;
   font-family: $ff-dft;
   font-size: 1rem;
+}
+
+p {
+  line-height: 1.5;
 }
