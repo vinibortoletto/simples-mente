@@ -47,110 +47,112 @@
 
     <!-- CSS
    ------------------------------------------------------>
-    <link rel="stylesheet" href="main.css?cb=1581275066608" />
+    <link rel="stylesheet" href="main.css?cb=1581521392050" />
   </head>
 
   <body>
     <header>
-      <nav class="nav">
-        <!-- Logo -->
-        <a href="index.html">
-          <div class="nav__logo">
-            <span>simples</span>
-            <span>mente</span>
+      <div class="wrapper">
+        <nav class="nav">
+          <!-- Logo -->
+          <a href="index.html">
+            <div class="nav__logo">
+              <span>simples</span>
+              <span>mente</span>
+            </div>
+          </a>
+
+          <!-- Menu -->
+          <div class="nav__menu" id="nav__menu">
+            <ul class="menu__list">
+              <a href="index.html">
+                <li class="menu__item">
+                  home
+                  <div class="page-active"></div>
+                </li>
+              </a>
+
+              <a href="produtos.html">
+                <li class="menu__item ">
+                  produtos
+                </li>
+              </a>
+
+              <a href="sobre.html">
+                <li class="menu__item">
+                  sobre
+                </li>
+              </a>
+
+              <a href="contato.html">
+                <li class="menu__item menu__item--marginRight">
+                  contato
+                </li>
+              </a>
+            </ul>
           </div>
-        </a>
 
-        <!-- Menu -->
-        <div class="nav__menu" id="nav__menu">
-          <ul class="menu__list">
-            <a href="index.html">
-              <li class="menu__item">
-                home
-                <div class="page-active"></div>
-              </li>
-            </a>
-
-            <a href="produtos.html">
-              <li class="menu__item ">
-                produtos
-              </li>
-            </a>
-
-            <a href="sobre.html">
-              <li class="menu__item">
-                sobre
-              </li>
-            </a>
-
-            <a href="contato.html">
-              <li class="menu__item menu__item--marginRight">
-                contato
-              </li>
-            </a>
-          </ul>
-        </div>
-
-        <!-- Icons -->
-        <div class="nav__icons">
-          <!-- Cart Icon-->
-          <button id="nav__icon--cart">
-            <div class="cart__marker">
-              <div id="cart__marker" class="marker__circle">0</div>
-            </div>
-            <i
-              class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
-            ></i>
-          </button>
-
-          <!-- Menu Icon -->
-          <button id="btn__menu">
-            <i class="nav__icon fas fa-plus"></i>
-          </button>
-        </div>
-
-        <!-- Cart -->
-        <div id="cart__overlay" class="cart__overlay">
-          <div id="cart" class="cart">
-            <div class="cart__header">
-              <h1>carrinho</h1>
-              <button id="cart__closeBtn">
-                <i class="fas fa-arrow-left"></i>
-              </button>
-            </div>
-
-            <!-- Cart Item -->
-            <div id="cart__content" class="cart__content">
-              <div class="cart__item--empty">
-                <h1>Seu carrinho está vazio!</h1>
-                <a href="produtos.html">Adicione alguns produtos</a>
+          <!-- Icons -->
+          <div class="nav__icons">
+            <!-- Cart Icon-->
+            <button id="nav__icon--cart">
+              <div class="cart__marker">
+                <div id="cart__marker" class="marker__circle">0</div>
               </div>
-            </div>
+              <i
+                class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
+              ></i>
+            </button>
 
-            <!-- Total -->
-            <div class="cart__footer">
-              <div class="cart__total">
-                <h3 id="cart__total">
-                  Total: R$ <span id="cart__total--value">100,00</span>
-                </h3>
-              </div>
+            <!-- Menu Icon -->
+            <button id="btn__menu">
+              <i class="nav__icon fas fa-plus"></i>
+            </button>
+          </div>
 
-              <!-- Buttons -->
-              <div class="cart__btnBox">
-                <button class="cart__btn cart__btn--primary">
-                  finalizar compra
-                </button>
-                <button
-                  id="cart__btn--empty"
-                  class="cart__btn cart__btn--secondary"
-                >
-                  esvaziar carrinho
+          <!-- Cart -->
+          <div id="cart__overlay" class="cart__overlay">
+            <div id="cart" class="cart">
+              <div class="cart__header">
+                <h1>carrinho</h1>
+                <button id="cart__closeBtn">
+                  <i class="fas fa-arrow-left"></i>
                 </button>
               </div>
+
+              <!-- Cart Item -->
+              <div id="cart__content" class="cart__content">
+                <div class="cart__item--empty">
+                  <h1>Seu carrinho está vazio!</h1>
+                  <a href="produtos.html">Adicione alguns produtos</a>
+                </div>
+              </div>
+
+              <!-- Total -->
+              <div class="cart__footer">
+                <div class="cart__total">
+                  <h3 id="cart__total">
+                    Total: R$ <span id="cart__total--value">100,00</span>
+                  </h3>
+                </div>
+
+                <!-- Buttons -->
+                <div class="cart__btnBox">
+                  <button class="cart__btn cart__btn--primary">
+                    finalizar compra
+                  </button>
+                  <button
+                    id="cart__btn--empty"
+                    class="cart__btn cart__btn--secondary"
+                  >
+                    esvaziar carrinho
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
     <main class="home">
@@ -193,6 +195,6 @@
     <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
 
     <!-- Main.js -------------------------------------->
-    <script src="main.js?cb=1581275066608"></script>
+    <script src="main.js?cb=1581521392050"></script>
   </body>
 </html>

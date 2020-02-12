@@ -44,7 +44,7 @@
 @include media(500px) {
   .home__bg {
     &--back {
-      outline-offset: -100px;
+      outline-offset: -7vw;
     }
   }
 }

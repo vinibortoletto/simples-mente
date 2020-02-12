@@ -1,5 +1,5 @@
 .home__text {
-  margin-top: 130px;
+  margin-top: 23vh;
   text-align: right;
 
   position: absolute;
@@ -39,5 +39,27 @@
       line-height: 0.7;
       font-size: 6rem;
     }
+  }
+}
+
+@include media(1800px) {
+  .home__text {
+    left: 15vw;
+
+    h1 {
+      font-size: 8rem;
+    }
+  }
+}
+
+@include media(2200px) {
+  .home__text {
+    left: 20vw;
+  }
+}
+
+@include media(2500px) {
+  .home__text {
+    left: 25vw;
   }
 }

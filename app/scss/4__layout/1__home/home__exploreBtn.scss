@@ -34,3 +34,17 @@
     }
   }
 }
+
+@include media(1800px) {
+  .home__explore {
+    right: 15vw;
+    bottom: 100px;
+  }
+}
+
+@include media(2300px) {
+  .home__explore {
+    right: 20vw;
+    bottom: 120px;
+  }
+}
