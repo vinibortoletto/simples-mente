@@ -198,8 +198,10 @@ class UI {
     this.setCartValues(cart);
     Storage.saveCart(cart);
 
-    let button = this.getSingleBtn(id);
-    button.innerHTML = `<i class='fas fa-cart-plus'></i>`;
+    if (mainContainer.classList.contains("produto")) {
+      let button = this.getSingleBtn(id);
+      button.innerHTML = `<i class='fas fa-cart-plus'></i>`;
+    }
 
     cart.length === 0 && (emptyCartWarning.style.display = "block");
   }

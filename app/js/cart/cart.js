@@ -50,5 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (mainContainer.classList.contains("produtoSobre")) {
     produtoSobrePage.displayProductInfo();
+    // produtoSobrePage.addToCartBtn();
   }
 });
