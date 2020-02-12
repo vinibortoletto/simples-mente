@@ -16,13 +16,14 @@ class UI {
     products.forEach(product => {
       result += `
         <div class="gallery__item">
-          <figure>
+          <a href="produto-sobre.html">
             <img
               class="galleryItem__img"
               src=${product.image}
               alt="tênis"
+              data-id=${product.id}
             />
-          </figure>
+          </a>
 
           <div class="galleryItem__text">
             <div>

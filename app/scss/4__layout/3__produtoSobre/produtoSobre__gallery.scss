@@ -1,4 +1,4 @@
-.produtoSobre .produto__galeria {
+.produtoSobre .product__gallery {
   @include flex-center;
   flex-direction: column;
 
@@ -32,7 +32,7 @@
 }
 
 @include media(700px) {
-  .produtoSobre .produto__galeria {
+  .produtoSobre .product__gallery {
     margin: 0;
     align-self: flex-start;
 
@@ -43,7 +43,7 @@
 }
 
 @include media(1000px) {
-  .produtoSobre .produto__galeria {
+  .produtoSobre .product__gallery {
     img {
       @include size(35vw);
       max-width: 30rem;

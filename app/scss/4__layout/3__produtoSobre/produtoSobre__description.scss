@@ -1,4 +1,4 @@
-.produtoSobre .produto__descricao {
+.produtoSobre .product__description {
   padding: 0 10vw;
 
   p {
@@ -8,7 +8,7 @@
 }
 
 @include media(700px) {
-  .produtoSobre .produto__descricao {
+  .produtoSobre .product__description {
     padding: 0;
     order: 2;
     margin-bottom: 2rem;

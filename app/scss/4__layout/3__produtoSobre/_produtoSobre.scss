@@ -1,7 +1,7 @@
-@import "produto__galeria";
-@import "produto__btns";
-@import "produto__cabecalho";
-@import "produto__descricao";
+@import "produtoSobre__gallery";
+@import "produtoSobre__btns";
+@import "produtoSobre__header";
+@import "produtoSobre__description";
 
 .produtoSobre {
   margin-top: 3rem;
@@ -10,11 +10,11 @@
 
 @include media(700px) {
   .produtoSobre {
-    .produtoSobre__produto {
+    .produtoSobre__product {
       display: flex;
     }
 
-    .secondary-column-wrapper {
+    .second_column_wrapper {
       display: flex;
       flex-direction: column;
       align-items: flex-start;

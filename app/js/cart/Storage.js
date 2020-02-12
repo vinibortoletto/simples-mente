@@ -17,4 +17,8 @@ class Storage {
       ? JSON.parse(localStorage.getItem("cart"))
       : [];
   }
+
+  static saveProductSelected(productSelected) {
+    localStorage.setItem("productSelected", JSON.stringify(productSelected));
+  }
 }

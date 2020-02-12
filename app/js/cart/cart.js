@@ -31,6 +31,7 @@ let buttonsDOM = [];
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UI();
   const products = new Products();
+  const produtoSobrePage = new ProdutoSobrePage();
 
   ui.setupAPP();
 
@@ -44,5 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(() => {
       ui.getGalleryItemBtns();
       ui.cardLogic();
+      produtoSobrePage.getProductSelected();
     });
+
+  if (mainContainer.classList.contains("produtoSobre")) {
+    produtoSobrePage.displayProductInfo();
+  }
 });
