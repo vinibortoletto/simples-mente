@@ -10,7 +10,7 @@
 
 @include media(700px) {
   .produtoSobre {
-    .produtoSobre__product {
+    &__product {
       display: flex;
     }
 

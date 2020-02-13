@@ -2,15 +2,15 @@ class ProdutoSobrePage {
   displayProductInfo() {
     let productSelected = JSON.parse(localStorage.getItem("productSelected"));
     const productContainer = document.getElementById("produtoSobre");
-    const productContent = document.createElement("section");
+    const productContent = document.createElement("div");
 
-    productContent.classList.add("produtoSobre__product");
+    const { title, price, image, id } = productSelected;
 
     productContent.innerHTML = `
         <section class="produtoSobre__product">
           <div class="product__gallery">
             <div class='img-wrapper'>
-              <img id='productGallery__img' src=${productSelected.image} alt="produto" />
+              <img id='productGallery__img' src=${image} alt="produto" />
             </div>
             <div>
               <button class="productGallery__btn productGallery__btn--active"></button>
@@ -21,13 +21,13 @@ class ProdutoSobrePage {
 
           <div class="second_column_wrapper">
             <div class="product__btns">
-              <input id='product__btn--amount' type="number" min="1" value="1" data-id=${productSelected.id}/>
-              <button id='product__btn--addToCart' data-id=${productSelected.id}>adicionar ao carrinho</button>
+              <input id='product__btn--amount' type="number" min="1" value="1" data-id=${id}/>
+              <button id='product__btn--addToCart' data-id=${id}>adicionar ao carrinho</button>
             </div>
 
             <div class="product__header">
-              <h1>${productSelected.title}</h1>
-              <h2>R$ ${productSelected.price}</h2>
+              <h1>${title}</h1>
+              <h2>R$ ${price}</h2>
             </div>
 
             <div class="product__description">

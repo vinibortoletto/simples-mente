@@ -64,6 +64,10 @@
     .item__amountBox {
       justify-self: end;
       text-align: center;
+
+      i {
+        padding: 0.5rem;
+      }
     }
   }
 }
