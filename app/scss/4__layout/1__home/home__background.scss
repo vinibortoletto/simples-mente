@@ -2,7 +2,10 @@
   position: absolute;
   z-index: -1;
 
+  // background-image: url("/images/home/home-bg-sm.png");
+  // background-image: url("/dist/images/home/home-bg-sm.png");
   background-image: url("/images/home/home-bg-sm.png");
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -51,12 +54,12 @@
 
 @include media(768px) {
   .home__bg {
-    background-image: url("/images/home/home-bg-md.png");
+    background-image: url("./images/home/home-bg-md.png");
   }
 }
 
 @include media(1024px) {
   .home__bg {
-    background-image: url("/images/home/home-bg-lg.png");
+    background-image: url("./images/home/home-bg-lg.png");
   }
 }
