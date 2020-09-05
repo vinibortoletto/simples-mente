@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Produtos | SimplesMente</title>
+
+    <!-- FavIcon
+   ------------------------------------------------------>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicon/site.webmanifest" />
+
+    <!-- FontAwesome
+   ------------------------------------------------------>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Fonts
+   ------------------------------------------------------>
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- CSS
+   ------------------------------------------------------>
+    <link rel="stylesheet" href="main.css?cb=1581609293672" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <!-- Logo -->
+        <a href="index.html">
+          <div class="nav__logo">
+            <span>simples</span>
+            <span>mente</span>
+          </div>
+        </a>
+
+        <!-- Menu -->
+        <div class="nav__menu" id="nav__menu">
+          <ul class="menu__list">
+            <a href="index.html">
+              <li class="menu__item">
+                home
+              </li>
+            </a>
+
+            <a href="produtos.html">
+              <li class="menu__item ">
+                produtos
+                <div class="page-active"></div>
+              </li>
+            </a>
+
+            <a href="sobre.html">
+              <li class="menu__item">
+                sobre
+              </li>
+            </a>
+
+            <a href="contato.html">
+              <li class="menu__item menu__item--marginRight">
+                contato
+              </li>
+            </a>
+          </ul>
+        </div>
+
+        <!-- Icons -->
+        <div class="nav__icons">
+          <!-- Cart Icon-->
+          <button id="nav__icon--cart">
+            <div class="cart__marker">
+              <div id="cart__marker" class="marker__circle">0</div>
+            </div>
+            <i
+              class="nav__icon nav__icon--marginRight fas fa-shopping-cart"
+            ></i>
+          </button>
+
+          <!-- Menu Icon -->
+          <button id="btn__menu">
+            <i class="nav__icon fas fa-plus"></i>
+          </button>
+        </div>
+
+        <!-- Cart -->
+        <div id="cart__overlay" class="cart__overlay">
+          <div id="cart" class="cart">
+            <div class="cart__header">
+              <h1>carrinho</h1>
+              <button id="cart__closeBtn">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+            </div>
+
+            <!-- Cart Item -->
+            <div id="cart__content" class="cart__content">
+              <div class="cart__item--empty">
+                <h1>Seu carrinho está vazio!</h1>
+                <a href="produtos.html">Adicione alguns produtos</a>
+              </div>
+            </div>
+
+            <!-- Total -->
+            <div class="cart__footer">
+              <div class="cart__total">
+                <h3 id="cart__total">
+                  Total: R$ <span id="cart__total--value">100,00</span>
+                </h3>
+              </div>
+
+              <!-- Buttons -->
+              <div class="cart__btnBox">
+                <button class="cart__btn cart__btn--primary">
+                  finalizar compra
+                </button>
+                <button
+                  id="cart__btn--empty"
+                  class="cart__btn cart__btn--secondary"
+                >
+                  esvaziar carrinho
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="produtos">
+      <div class="produtos__bg"></div>
+
+      <div class="produtos__title">
+        <h1>nossos</h1>
+        <h1>produtos</h1>
+      </div>
+
+      <section
+        id="produtos__gallery"
+        class="carousel produtos__gallery"
+      ></section>
+    </main>
+
+    <footer>
+      <nav class="footer__nav">
+        <ul>
+          <li>
+            <a href="index.html">home</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="produtos.html">produtos</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="sobre.html">sobre</a>
+          </li>
+          <span>|</span>
+
+          <li>
+            <a href="contato.html">contato</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="bar bar--sm"></div>
+      <div class="bar bar--md"></div>
+      <div class="bar bar--lg bar--marginBottom">
+        <p>
+          Criado por
+        </p>
+        <a href="https://vinicius-bortoletto.netlify.com/">
+          <img
+            src="/images/footer/footer-logo.svg"
+            alt="vinicius bortoletto logo"
+          />
+        </a>
+      </div>
+    </footer>
+
+    <!-- Contentful ----------------------------------------------------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+
+    <!-- Flickity (Image gallery) ------------------------------------------------->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+    <!-- Main.js -------------------------------------->
+    <script src="main.js?cb=1581609293672"></script>
+  </body>
+</html>
