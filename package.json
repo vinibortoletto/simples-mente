@@ -1,10 +1,11 @@
 {
+  "homepage": "https://vinibortoletto.github.io/simples-mente",
   "name": "simples-mente",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,11 +17,11 @@
   "bugs": {
     "url": "https://github.com/ViniBortoletto/simples-mente/issues"
   },
-  "homepage": "https://github.com/ViniBortoletto/simples-mente#readme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "browser-sync": "^2.26.7",
     "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-htmlmin": "^5.0.1",
