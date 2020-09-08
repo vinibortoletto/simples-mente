@@ -31,17 +31,17 @@ This project was developed with the following technologies:
 
 ## :information_source: How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com). From your command line:
+To clone and run this application, you'll need [Git](https://git-scm.com),  [VS Code](https://code.visualstudio.com/) + VSCode extension [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). From your command line:
 
 ```bash
 # Clone this repository
 $ git clone https://github.com/vinibortoletto/simples-mente.git
 
-# Go into the repository
-$ cd simples-mente/dist
+# Open in VS Code
+$ code simples-mente
 
-# Run the app
-$ open ./index.html
+# In VS Code
+$ alt + l, alt + o
 
 ```
 
