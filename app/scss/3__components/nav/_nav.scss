@@ -16,7 +16,7 @@
 
 @include media(1400px) {
   .nav {
-    width: 1800px;
+    max-width: 1800px;
     margin: auto;
   }
 }
